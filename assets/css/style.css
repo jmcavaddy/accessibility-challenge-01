@@ -13,12 +13,6 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav,
-aside,
-main {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 header {
     padding: 20px;
     background-color: #2a607c;
@@ -34,14 +28,17 @@ header h1 {
     color: #d9dcd6;
 }
 
+nav,
+main,
+aside {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: 20px;
-}
-
-nav ul {
     list-style-type: none;
 }
 
@@ -68,46 +65,15 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    background-color: #2589bd;
-}
-
-.aside-info {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.aside-info h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.aside-info img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.main-info h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .main-info {
@@ -122,9 +88,41 @@ aside {
     max-height: 200px;
 }
 
-.main-info h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+}
+
+.aside-info h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.aside-info {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.aside-info img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 footer {
