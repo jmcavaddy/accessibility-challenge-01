@@ -1,136 +1,198 @@
 * {
-    box-sizing: border-box;
+    /* Include an element's padding and border in its height and width calculation */
+    box-sizing: border-box; 
+    /* Set padding of all elements to 0 */
     padding: 0;
+    /* Set margin of all elements to 0 */
     margin: 0;
 }
 
 body {
+    /* Set background color of the page */
     background-color: #d9dcd6;
 }
 
 header,
 footer {
+    /* Set font-family property for text in header and footer elements */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header {
-    padding: 20px;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-#seo {
-    color: #d9dcd6;
 }
 
 nav,
 main,
 aside {
+    /* Set font-family property for text in nav, main, and aside elements */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+header {
+    /* Add padding to increase size of header */
+    padding: 20px;
+    /* Set background color of header */
+    background-color: #2a607c;
+    /* Set font color of text in header */
+    color: #ffffff;
+}
+
+header h1 {
+    /* Allows for header and nav links to be on the same line */
+    display: inline-block;
+    /* Set font size of text in header */
+    font-size: 48px;
+}
+
+#seo {
+    /* Specify font color for unique text in header */
+    color: #d9dcd6;
+}
+
 nav {
+    /* Move nav links away from top border of container */
     padding-top: 15px;
+    /* Move nav links away from right border of container */
     margin-right: 20px;
+    /* Move elements to right side of container */
     float: right;
+    /* Set font size of nav bar links */
     font-size: 20px;
-    list-style-type: none;
+    /* Remove bullet points from nav bar links */
+    list-style-type: none; 
 }
 
 nav li {
+    /* Nav bar links in row format */
     display: inline-block;
+    /* Add space in between nav links */
     margin-left: 25px;
 }
 
 a {
+    /* Set color of text in links */
     color: #ffffff;
+    /* Remove underline from links */
     text-decoration: none;
 }
 
 p {
+    /* Set font size for text in main, aside, and footer */
     font-size: 16px;
 }
 
+
 .hero {
+    /* Set height of hero image; image does not appear without setting height */
     height: 800px;
+    /* I am not sure width: 100% is necessary because of background-size: cover */
     width: 100%;
+    /* Add space between hero and main/aside elements */
     margin-bottom: 25px;
+    /* Set hero image to file located at this path */
     background-image: url("../images/digital-marketing-meeting.jpg");
+    /* Cover entire container with image */
     background-size: cover;
+    /* Keep the center of the image oriented to the center of its container */
     background-position: center;
 }
 
 main {
+    /* Set main to take up 75% of the width of the page */
     width: 75%;
+    /* Allow for aside element to orient inline with main */
     display: inline-block;
+    /* Move main away from left border of container; shows background color of body "behind" main */
     margin-left: 20px;
 }
 
 .main-info h2 {
+    /* Add space between header and content */
     margin-bottom: 20px;
+    /* Make header larger than content */
     font-size: 36px;
 }
 
 .main-info {
+    /* Add space between each section of main content; creates the "card" effect */
     margin-bottom: 20px;
+    /* Move content away from border of each section */
     padding: 50px;
+    /* Set height of each section */
     height: 300px;
+    /* Set background color of section */
     background-color: #0072bb;
+    /* Set font color of main */
     color: #ffffff;
 }
 
 .main-info img {
+    /* Prevent image from being larger than its card */
     max-height: 200px;
 }
 
 .float-left {
+    /* Move image to left border of its container, leaving space for text on its right side */
     float: left;
+    /* Add space between right border of image and text to its right */
     margin-right: 25px;
 }
 
 .float-right {
+    /* Move image to right border of its container, making space for text on its left side */
     float: right;
+    /* Add space between left border of image and text to its left */
     margin-left: 25px;
 }
 
 aside {
+    /* Move aside away from the right border of the page */
     margin-right: 20px;
+    /* Move content of aside away from borders of aside container */
     padding: 20px;
+    /* I am not sure if clear: both is necessary here */
     clear: both;
+    /* Move aside to right of main */
     float: right;
+    /* Make aside take up 20% width of page; without this, aside gets too wide to be next to main*/
     width: 20%;
+    /* I am not sure if height: 100% is necessary here */
     height: 100%;
+    /* Set background color of aside */
     background-color: #2589bd;
 }
 
 .aside-info h3 {
+    /* Add space between aside content header and icon */
     margin-bottom: 10px;
+    /* Center headers */
     text-align: center;
 }
 
-
 .aside-info {
+    /* Add space between chunks of content in aside*/
     margin-bottom: 32px;
+    /* Set font color for text in aside */
     color: #ffffff;
 }
 
 .aside-info img {
+    /* Ensure image will be on its own line (I am not sure about this one) */
     display: block;
+    /* Make space between header and image; center image with auto left and right margin */
     margin: 10px auto;
+    /* Set limit for width of aside icons; originals are far too large for the page */
     max-width: 150px;
 }
 
 footer {
+    /* Add space around footer content; make the footer bar larger */
     padding: 30px;
+    /* Make footer end up beneath the aside that is float: right */
+    /* I am not sure clear: both is necessary here */
     clear: both;
+    /* Align text to the center of the page */
     text-align: center;
 }
 
 footer h2 {
+    /* Set font size */
     font-size: 20px;
 }
