@@ -78,20 +78,11 @@ p {
     font-size: 16px;
 }
 
-
-.hero {
-    /* Set height of hero image; image does not appear without setting height */
-    height: 800px;
-    /* I am not sure width: 100% is necessary because of background-size: cover */
+img.hero-image {
+    /* Make image stretch the entire width of the page */
     width: 100%;
-    /* Add space between hero and main/aside elements */
+    /* Add space between bottom of hero image and content */
     margin-bottom: 25px;
-    /* Set hero image to file located at this path */
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    /* Cover entire container with image */
-    background-size: cover;
-    /* Keep the center of the image oriented to the center of its container */
-    background-position: center;
 }
 
 main {
